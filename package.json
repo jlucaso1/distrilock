@@ -1,0 +1,32 @@
+{
+  "name": "distrilock",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node -e ioredis && tsc src/index.ts --declaration --outDir dist",
+    "prepack": "bun run build"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "email": "jlucaso@hotmail.com",
+    "name": "João Lucas de Oliveira Lopes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlucaso1/distrilock.git"
+  },
+  "license": "MIT",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "ioredis": "^5.6.1"
+  }
+}
