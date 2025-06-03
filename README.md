@@ -1,5 +1,9 @@
 # distrilock: Distributed Locks with Redis in TypeScript
 
+[![codecov](https://codecov.io/gh/jlucaso1/distrilock/graph/badge.svg)](https://codecov.io/gh/jlucaso1/distrilock)
+[![NPM Version](https://img.shields.io/npm/v/distrilock.svg)](https://www.npmjs.com/package/distrilock)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A TypeScript implementation of the Redlock algorithm for distributed locks using Redis. This library helps manage resources in a mutually exclusive way across different processes or services.
 
 It is based on the concepts outlined in the official Redis documentation: [Distributed Locks with Redis](https://redis.io/docs/latest/develop/use/patterns/distributed-locks/).

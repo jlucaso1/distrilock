@@ -1,6 +1,6 @@
 {
   "name": "distrilock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "bun build src/index.ts --outdir dist --target node -e ioredis && tsc src/index.ts --declaration --outDir dist",
     "prepack": "bun run build"
@@ -18,8 +18,12 @@
     "url": "https://github.com/jlucaso1/distrilock.git"
   },
   "license": "MIT",
-  "module": "src/index.ts",
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@types/bun": "latest"
   },
