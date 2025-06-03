@@ -184,7 +184,7 @@ bun test
 
 ## License
 
-(Specify your license here, e.g., MIT)
+MIT
 
 ---
 
